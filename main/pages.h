@@ -46,7 +46,7 @@ margin-top: 1em;\
 \
 input {\
 border: 1px solid rgb(196, 196, 196);\
-color: rgb(76, 76, 76);\
+color: #fff;\
 width: 240px;\
 border-radius: 3px;\
 height: 40px;\
@@ -56,10 +56,14 @@ background: rgba(255, 255, 255, 0.1);\
 backdrop-filter: blur(10px);\
 }\
 \
+input::placeholder {\
+color: #fff;\
+}\
+\
 input:focus {\
-border: 1px solid black;\
+border: 1px solid #A587DE;\
 outline: none !important;\
-box-shadow: 0 0 10px #719ECE;\
+box-shadow: 0 0 10px #A587DE;\
 }\
 \
 #config {\
@@ -79,7 +83,7 @@ animation: fadeIn 1s ease-in-out;\
 }\
 \
 .ok-button {\
-background-color: #0078e7;\
+background-color: #6a5acd;\
 color: #fff;\
 border: none;\
 cursor: pointer;\
@@ -87,11 +91,11 @@ transition: all 0.3s;\
 }\
 \
 .ok-button:hover {\
-background-color: #005fa3;\
+background-color: #5a4cb3;\
 }\
 \
 .red-button {\
-background-color: #e72e00;\
+background-color: #e74c3c;\
 color: #fff;\
 border: none;\
 cursor: pointer;\
@@ -99,7 +103,7 @@ transition: all 0.3s;\
 }\
 \
 .red-button:hover {\
-background-color: #b32400;\
+background-color: #c0392b;\
 }\
 \
 small {\
@@ -208,7 +212,7 @@ setTimeout(\"location.href = '/'\",10000);\
 </tr>\
 </table>\
 <small>\
-<i>Leave it in blank if you want your ESP32 to get an IP using DHCP</i>\
+<i>Leave it blank if you want your ESP32 to get an IP using DHCP</i>\
 </small>\
 </form>\
 \
@@ -225,6 +229,7 @@ setTimeout(\"location.href = '/'\",10000);\
 </body>\
 </html>\
 "
+
 
 #define LOCK_PAGE "<html>\
 <head>\
@@ -274,7 +279,7 @@ margin-top: 1em;\
 \
 input {\
 border: 1px solid rgb(196, 196, 196);\
-color: rgb(76, 76, 76);\
+color: #fff;\
 width: 240px;\
 border-radius: 3px;\
 height: 40px;\
@@ -284,10 +289,14 @@ background: rgba(255, 255, 255, 0.1);\
 backdrop-filter: blur(10px);\
 }\
 \
+input::placeholder {\
+color: #fff;\
+}\
+\
 input:focus {\
-border: 1px solid black;\
+border: 1px solid #fdbb2d;\
 outline: none !important;\
-box-shadow: 0 0 10px #719ECE;\
+box-shadow: 0 0 10px #fdbb2d;\
 }\
 \
 #config {\
@@ -307,7 +316,7 @@ animation: fadeIn 1s ease-in-out;\
 }\
 \
 .ok-button {\
-background-color: #0078e7;\
+background-color: #6a5acd;\
 color: #fff;\
 border: none;\
 cursor: pointer;\
@@ -315,11 +324,11 @@ transition: all 0.3s;\
 }\
 \
 .ok-button:hover {\
-background-color: #005fa3;\
+background-color: #5a4cb3;\
 }\
 \
 .red-button {\
-background-color: #e72e00;\
+background-color: #e74c3c;\
 color: #fff;\
 border: none;\
 cursor: pointer;\
@@ -327,7 +336,7 @@ transition: all 0.3s;\
 }\
 \
 .red-button:hover {\
-background-color: #b32400;\
+background-color: #c0392b;\
 }\
 \
 small {\
@@ -370,7 +379,7 @@ setTimeout(\"location.href = '/'\",1000);\
 <table>\
 <tr>\
 <td>Password:</td>\
-<td><input type='password' name='unlock_password'/></td>\
+<td><input type='password' name='unlock_password' placeholder='Enter password'/></td>\
 </tr>\
 <tr>\
 <td></td>\
@@ -378,7 +387,7 @@ setTimeout(\"location.href = '/'\",1000);\
 </tr>\
 </table>\
 <small>\
-<i>Default: STA password to unlock\
+<i>Default: STA password to unlock</i>\
 </small>\
 </form>\
 </div>\
